@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TrailHead Base Map</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+          integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+          crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+            integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+            crossorigin=""></script>
+
+</head>
+<body>
+
+<div id="mapid" style="width: 600px; height: 400px;"></div>
+
+<script>
+
+    var mymap = L.map('mapid').setView([45.505, -120], 7);
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/clarype/cj9bq934d4jo02snz8hyjfjlp/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY2xhcnlwZSIsImEiOiJjaXpoODk3NzUwMTU3MzNtZWJlNWUzcXQ4In0.jjpzASpHGUkCJTsG6kZLIg', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+        '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+        'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+</script>
+
+</body>
+
+</html>
+
+
