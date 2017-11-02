@@ -12,6 +12,6 @@ wms url geojson
 
 **http://localhost:8080/geoserver/sf/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=sf:ore_counties&maxFeatures=50&outputFormat=application%2Fjson**
 
-<a href="https://github.com/clarype/TrailBaseMap/blob/master/assets/ore_counties.geojson.txt">Click here</a> for the link to the geojson file.
+<a href="https://github.com/clarype/TrailBaseMap/blob/master/assets/ore_counties.geojson">Click here</a> for the link to the geojson file.
 
 
